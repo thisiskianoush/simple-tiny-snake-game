@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.board {
+  width: 400px;
+  /* border: 5px solid #666; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.game {
+  height: 400px;
+  width: 400px;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.game-score,
+.game-fail {
+  background-color: cornflowerblue;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.game-fail {
+  display: none;
+  background-color: #ff93a8;
+  color: crimson;
+}
+
+.game-score span {
+  color: white;
+  text-shadow: 0 0 5px #1762ed;
+  margin: 10px;
+}
+
+.game-controllers {
+  width: 100%;
+  background-color: bisque;
+  border-top: 3px solid orange;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.game-controllers button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.game-controllers button:active {
+  transform: translateY(2px);
+}
+
+#snake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+
+#apple {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: crimson;
+}
+
+#start-game {
+  background-color: #333;
+}
+
+#stop-game {
+  background-color: crimson;
+}
