@@ -1,4 +1,4 @@
-import Initializer, { SnakeDirection } from "./GameInitializer";
+import Initializer from "./GameInitializer";
 
 //Elements
 const snakeBoard = document.querySelector(".game")! as HTMLDivElement;

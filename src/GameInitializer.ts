@@ -46,7 +46,7 @@ interface SnakeGameOptions {
   initialSnakePosition?: SnakePosition;
   snakeJumps?: number;
   snakeVelocity?: SnakeVelocity;
-  initialSnakeDirection?: SnakeDirection.BOTTOM;
+  initialSnakeDirection?: SnakeDirection;
 }
 
 export default class Game implements SnakeGame {
